@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -56,6 +57,23 @@ int main()
         {
             cout << num << endl;
         }
+    }
+
+    bool flag = 0;
+
+    for (int i = 2; i <= sqrt(num2); i++)
+    {
+        if (num2 % i == 0)
+        {
+            cout << "non-prime" << endl;
+            flag = 1;
+            break;
+        }
+    }
+
+    if (flag == 0)
+    {
+        cout << "prime" << endl;
     }
 
     return 0;
