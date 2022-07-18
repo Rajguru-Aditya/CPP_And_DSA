@@ -20,7 +20,7 @@ int main()
     cin >> inputA;
 
     int arr[inputA];
-    for (int i = 0; i <= inputA; i++)
+    for (int i = 0; i < inputA; i++)
     {
         cin >> arr[i];
     }
