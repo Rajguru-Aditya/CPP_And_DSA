@@ -49,6 +49,22 @@ public:
             arr[top] = val;
         }
     }
+
+    int pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack Underflow" << endl;
+            return 0;
+        }
+        else
+        {
+            int popvalue = arr[top];
+            arr[top] = 0;
+            top--;
+            return popValue;
+        }
+    }
 };
 
 int main()
