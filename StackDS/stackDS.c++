@@ -36,6 +36,19 @@ public:
         else
             return false;
     }
+
+    void push(int val)
+    {
+        if (isFull())
+        {
+            cout << "Stack Overflow" << endl;
+        }
+        else
+        {
+            top++; // 0 in the beginning
+            arr[top] = val;
+        }
+    }
 };
 
 int main()
